@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-  background: url('background.png') no-repeat center center fixed;
+  background: url('Hi.png') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
