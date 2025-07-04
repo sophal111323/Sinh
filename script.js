@@ -95,4 +95,21 @@ setInterval(() => createFallingItem("heart"), 1500);
 setInterval(() => createFallingItem("petal"), 1300);
 
 const fallingImages = [
-  "pic1.jpg", // រូបផ្ទ�
+  "pic1.jpg", // រូបផ្ទាល់ខ្លួន
+  "pic2.jpg",
+  "pic3.jpg",
+  "pic4.jpg",
+  "pic5.jpg",
+];
+
+function createFallingImage() {
+  const img = document.createElement("img");
+  img.src = fallingImages[Math.floor(Math.random() * fallingImages.length)];
+  img.classList.add("falling-image");
+  img.style.left = Math.random() * 100 + "vw";
+  img.style.animationDuration = (3 + Math.random() * 2) + "s";
+  document.body.appendChild(img);
+  setTimeout(() => img.remove(), 7000);
+}
+
+setInterval(createFallingImage, 500);
