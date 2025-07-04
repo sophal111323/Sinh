@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-  background: url('https://i.ibb.co/7tpZLxwn/Messenger-creation-A0-E7-E7-DD-C17-E-45-D0-8-B1-E-57-C238-F205-FB.jpg') no-repeat center center fixed;
+  background: url('background.png') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
